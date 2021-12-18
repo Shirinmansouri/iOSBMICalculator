@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinalTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="4uX-CK-Jq3">
+                                <rect key="frame" x="20" y="44" width="374" height="571"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hu2-6j-Ctm">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="41"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Imperial">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cv8-YE-95V">
+                                        <rect key="frame" x="0.0" y="48" width="376" height="41.5"/>
+                                        <connections>
+                                            <action selector="swBMItype:" destination="BYZ-38-t0r" eventType="valueChanged" id="3Ds-dc-6wn"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wx-FY-ppE">
+                                        <rect key="frame" x="0.0" y="96.5" width="374" height="41"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Name:">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ow2-rd-lQp">
+                                        <rect key="frame" x="0.0" y="144.5" width="374" height="41"/>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwo-gZ-sy5">
+                                        <rect key="frame" x="0.0" y="192.5" width="374" height="41.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Age:">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J8O-15-iEl">
+                                        <rect key="frame" x="0.0" y="241" width="374" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbR-5h-3z4">
+                                        <rect key="frame" x="0.0" y="289" width="374" height="41"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Height:">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" placeholder="Meter" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oNi-qm-EgF">
+                                        <rect key="frame" x="0.0" y="337" width="374" height="41.5"/>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4u-mx-6eb">
+                                        <rect key="frame" x="0.0" y="385.5" width="374" height="41"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Weight:">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="kilogram" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7JW-rq-Wam">
+                                        <rect key="frame" x="0.0" y="433.5" width="374" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSg-qI-ju8">
+                                        <rect key="frame" x="0.0" y="481.5" width="374" height="41.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Gender:">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWr-Os-obX">
+                                        <rect key="frame" x="0.0" y="530" width="374" height="41"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Select Gender">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Select Gender">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnGenderClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhi-8A-PVF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="571" id="WtT-OL-yJ8"/>
+                                    <constraint firstAttribute="width" constant="374" id="mJE-IL-FTs"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fQI-fd-2mm">
+                                <rect key="frame" x="19" y="653" width="370" height="47"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hu5-Bs-QoZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="177.5" height="47"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Calculate BMI">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnCalculateBMI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Cs-Wo-Wvt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87h-hH-Nav">
+                                        <rect key="frame" x="192.5" y="0.0" width="177.5" height="47"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Reset">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q6r-YZ-Ewg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="370" id="3de-cu-VWi"/>
+                                    <constraint firstAttribute="height" constant="47" id="d6c-2D-RWy"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="thk-MY-miS">
+                                <rect key="frame" x="20" y="725" width="374" height="117.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cde-gj-E7m">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60.5"/>
+                                        <attributedString key="attributedText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9O9-a4-Aph">
+                                        <rect key="frame" x="0.0" y="70.5" width="374" height="47"/>
+                                        <color key="backgroundColor" red="0.16237936820000001" green="0.59152484130000005" blue="0.59152484130000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Done">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnDoneClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5y-DT-FA8"/>
+                                            <segue destination="uEd-1c-vvO" kind="show" id="ptP-X9-YMb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117.5" id="mvQ-tb-gBg"/>
+                                    <constraint firstAttribute="width" constant="374" id="y1D-8h-JiH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="thk-MY-miS" firstAttribute="top" secondItem="fQI-fd-2mm" secondAttribute="bottom" constant="25" id="6sC-n7-XSc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="thk-MY-miS" secondAttribute="trailing" constant="20" id="7wM-JD-f4B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4uX-CK-Jq3" secondAttribute="trailing" constant="20" id="Grr-CO-Nal"/>
+                            <constraint firstItem="thk-MY-miS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NpN-CR-JaP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fQI-fd-2mm" secondAttribute="trailing" constant="25" id="O3r-Ra-9P1"/>
+                            <constraint firstItem="fQI-fd-2mm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="ZvL-CS-cDp"/>
+                            <constraint firstItem="4uX-CK-Jq3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="a7f-BY-KgM"/>
+                            <constraint firstItem="fQI-fd-2mm" firstAttribute="top" secondItem="4uX-CK-Jq3" secondAttribute="bottom" constant="38" id="d00-xp-6XP"/>
+                            <constraint firstItem="4uX-CK-Jq3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qdX-0L-dWK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="thk-MY-miS" secondAttribute="bottom" constant="19.5" id="rHp-Wi-yiI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4ZA-1z-KQe"/>
+                    <connections>
+                        <outlet property="btnGender" destination="OWr-Os-obX" id="cKg-gZ-fkw"/>
+                        <outlet property="lblResult" destination="cde-gj-E7m" id="0Ex-Cy-K2n"/>
+                        <outlet property="txtAge" destination="J8O-15-iEl" id="3Kc-bv-BMX"/>
+                        <outlet property="txtHeight" destination="oNi-qm-EgF" id="uOY-nd-wkh"/>
+                        <outlet property="txtName" destination="Ow2-rd-lQp" id="HvX-bW-DQh"/>
+                        <outlet property="txtWeight" destination="7JW-rq-Wam" id="HqV-hy-jvk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4.3478260869565224" y="-87.053571428571431"/>
+        </scene>
+        <!--Tracking BMI-->
+        <scene sceneID="ZSr-Fv-FaA">
+            <objects>
+                <tableViewController id="fc1-7Q-KTX" customClass="TableViewController" customModule="FinalTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="LUR-Mr-QfX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="FJX-oQ-hS3">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FJX-oQ-hS3" id="jLi-Ji-G7Z">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="Cell"/>
+                                <connections>
+                                    <segue destination="eJn-Hi-hpz" kind="show" id="sXe-hC-fTm"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fc1-7Q-KTX" id="KIO-FF-fkF"/>
+                            <outlet property="delegate" destination="fc1-7Q-KTX" id="fyL-BD-L6P"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Tracking BMI" id="D1F-d8-Z2I">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="EZJ-Rb-HxS">
+                            <connections>
+                                <action selector="btnBackPressed:" destination="fc1-7Q-KTX" id="jU4-Ip-VoY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ux7-Sc-rm8">
+                            <connections>
+                                <action selector="btnAdd:" destination="fc1-7Q-KTX" id="FLC-Jo-YYD"/>
+                                <segue destination="Vps-Yu-d6l" kind="show" id="EZu-DQ-0pV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sty-iA-5EI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1610" y="-1"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="WJ7-aK-4su">
+            <objects>
+                <viewController id="eJn-Hi-hpz" customClass="DetailViewController" customModule="FinalTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vV7-0x-Gqd" customClass="Detail">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="M3V-sT-4t3">
+                                <rect key="frame" x="20" y="114" width="374" height="485.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kia-Wr-hhd">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="49.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Edit BMI">
+                                                <attributes>
+                                                    <font key="NSFont" size="36" name="AvenirNext-DemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJq-WJ-C7G">
+                                        <rect key="frame" x="0.0" y="64.5" width="374" height="33"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Weight">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aV-OW-40r">
+                                        <rect key="frame" x="0.0" y="112.5" width="374" height="32"/>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nz-A9-Rb0">
+                                        <rect key="frame" x="0.0" y="159.5" width="374" height="33"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="BmiDate">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="I3g-Oq-IO6">
+                                        <rect key="frame" x="0.0" y="207" width="374" height="216"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwD-mc-asw">
+                                        <rect key="frame" x="0.0" y="438.5" width="374" height="47"/>
+                                        <color key="backgroundColor" red="0.22986602780000001" green="0.81166917090000001" blue="0.8078500032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Save">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnSave:" destination="eJn-Hi-hpz" eventType="touchUpInside" id="Zv6-Vd-EZC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="608" id="0tR-uh-HgS"/>
+                                    <constraint firstAttribute="width" constant="374" id="kfl-qz-agg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cRi-EB-Oah"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M3V-sT-4t3" firstAttribute="top" secondItem="cRi-EB-Oah" secondAttribute="top" constant="58" id="1tP-Ah-Ogw"/>
+                            <constraint firstItem="cRi-EB-Oah" firstAttribute="bottom" secondItem="M3V-sT-4t3" secondAttribute="bottom" constant="120" id="8RF-r3-x2Q"/>
+                            <constraint firstItem="M3V-sT-4t3" firstAttribute="leading" secondItem="cRi-EB-Oah" secondAttribute="leading" constant="20" id="Hi2-dm-hLX"/>
+                            <constraint firstItem="cRi-EB-Oah" firstAttribute="trailing" secondItem="M3V-sT-4t3" secondAttribute="trailing" constant="20" id="deH-lD-v4b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tjM-Nd-Om0"/>
+                    <connections>
+                        <outlet property="dpBmiDate" destination="I3g-Oq-IO6" id="Pr0-NI-keR"/>
+                        <outlet property="txtWeight" destination="6aV-OW-40r" id="Lux-Uq-OA5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nuc-FC-np4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2462.3188405797105" y="16.741071428571427"/>
+        </scene>
+        <!--Add View Controller-->
+        <scene sceneID="TXV-5a-i2F">
+            <objects>
+                <viewController id="Vps-Yu-d6l" customClass="AddViewController" customModule="FinalTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ar5-zk-CZq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hol-9s-Q7v">
+                                <rect key="frame" x="20" y="81" width="374" height="485.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvT-gn-Hz3">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="49.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Add">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="36" name="AvenirNext-DemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6w1-92-LJw">
+                                        <rect key="frame" x="0.0" y="64.5" width="374" height="33"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Weight">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="obI-55-gTX">
+                                        <rect key="frame" x="0.0" y="112.5" width="374" height="32"/>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4g6-WA-QHK">
+                                        <rect key="frame" x="0.0" y="159.5" width="374" height="33"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="BmiDate">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="CWH-Yh-fmt">
+                                        <rect key="frame" x="0.0" y="207.5" width="374" height="216"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FC6-bm-sDy">
+                                        <rect key="frame" x="0.0" y="438.5" width="374" height="47"/>
+                                        <color key="backgroundColor" red="0.22986602780000001" green="0.81166917090000001" blue="0.8078500032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Save">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="AvenirNext-DemiBold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnAdd:" destination="Vps-Yu-d6l" eventType="touchUpInside" id="P2p-0C-Da8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="Utm-S7-Jx4"/>
+                                    <constraint firstAttribute="height" constant="632" id="Zyb-bs-ir8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K9l-RP-lpP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K9l-RP-lpP" firstAttribute="bottom" secondItem="hol-9s-Q7v" secondAttribute="bottom" constant="129" id="27s-Tq-6fc"/>
+                            <constraint firstItem="K9l-RP-lpP" firstAttribute="trailing" secondItem="hol-9s-Q7v" secondAttribute="trailing" constant="20" id="59a-2M-j6Y"/>
+                            <constraint firstItem="hol-9s-Q7v" firstAttribute="leading" secondItem="K9l-RP-lpP" secondAttribute="leading" constant="20" id="cn0-9z-4pz"/>
+                            <constraint firstItem="hol-9s-Q7v" firstAttribute="top" secondItem="K9l-RP-lpP" secondAttribute="top" constant="25" id="htn-il-UgD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fvo-Es-qkf"/>
+                    <connections>
+                        <outlet property="dbDate" destination="CWH-Yh-fmt" id="xNp-od-HCE"/>
+                        <outlet property="txtWeight" destination="obI-55-gTX" id="bmz-PL-Xqh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2i-Z6-8Vj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3179.7101449275365" y="-1.3392857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6gb-Lg-iQc">
+            <objects>
+                <navigationController id="uEd-1c-vvO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="088-b0-7UQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WcJ-6V-0AJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fc1-7Q-KTX" kind="relationship" relationship="rootViewController" id="8Yt-j6-E54"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FqX-bW-nzt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="-1"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
