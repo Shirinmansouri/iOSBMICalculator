@@ -232,7 +232,7 @@ class ViewController: UIViewController {
         }, completion: nil )
     }
     @IBAction func btnGenderClicked(_ sender: Any) {
-        dataSource = ["Male" , "Female"]
+        dataSource = ["Male " , "Female "]
         AddTransparentView(frames : btnGender.frame)
     }
 }
