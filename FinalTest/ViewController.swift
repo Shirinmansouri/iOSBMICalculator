@@ -1,9 +1,17 @@
-//
-//  ViewController.swift
-//  FinalTest
-//
-//  Created by Shirin Mansouri on 2021-12-16.
-//
+/*
+ App        : Assignment 6 – Todo List App - Part 3 – Gesture Control
+ Version    : Part 3
+ --------------------------
+ Group #1
+ --------------------------
+ Author     : Shirin Mansouri
+ Student ID : 301131068
+ --------------------------
+ Description:
+ 
+ ViewController handles the logic for the BMI Calculator Scene
+ --------------------------
+ */
 
 import UIKit
 
@@ -11,7 +19,7 @@ class cellClass :UITableViewCell
 {
     
 }
- 
+// a struct to save BMI information
 struct Bmi: Codable {
     var name: String
     var weight: Float
@@ -45,6 +53,8 @@ class ViewController: UIViewController {
         clearForm()
         
     }
+    
+    // A function to Validate BMI Information
     private func ValidateForm() -> Bool
     {
         if (txtWeight.text!.isEmpty || txtHeight.text!.isEmpty || txtAge.text!.isEmpty ||
@@ -75,6 +85,8 @@ class ViewController: UIViewController {
         bmi = 0
         lblResult.text=""
     }
+    
+    // A function to Calculate BMI  based on BMI Type
     @IBAction func btnCalculateBMI(_ sender: Any) {
         if (ValidateForm())
         {
@@ -135,7 +147,7 @@ class ViewController: UIViewController {
         
     }
 
-    
+    // Afunction to show tracking screen
     @IBAction func btnDoneClicked(_ sender: UIButton) {
      
 //        let domain = Bundle.main.bundleIdentifier!
@@ -201,6 +213,8 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(cellClass.self, forCellReuseIdentifier: "Cell")
     }
+    
+    // to create Gender Drop Down
     func AddTransparentView(frames : CGRect)
     {
         let window = UIApplication.shared.keyWindow
@@ -236,6 +250,8 @@ class ViewController: UIViewController {
         AddTransparentView(frames : btnGender.frame)
     }
 }
+
+// to create a table view for Gender drop down 
 extension ViewController : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
