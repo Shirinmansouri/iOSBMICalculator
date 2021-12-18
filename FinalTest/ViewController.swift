@@ -138,9 +138,9 @@ class ViewController: UIViewController {
     
     @IBAction func btnDoneClicked(_ sender: UIButton) {
      
-//        let domain = Bundle.main.bundleIdentifier!
-//        UserDefaults.standard.removePersistentDomain(forName: domain)
-//        UserDefaults.standard.synchronize()
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        UserDefaults.standard.synchronize()
         
         if (ValidateForm())
         {
