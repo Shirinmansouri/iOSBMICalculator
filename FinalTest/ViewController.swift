@@ -1,8 +1,6 @@
 /*
- App        : Assignment 6 – Todo List App - Part 3 – Gesture Control
- Version    : Part 3
- --------------------------
- Group #1
+ App        : Final Test– BMI Calculator App  l
+ Version    : 1.1.0.0
  --------------------------
  Author     : Shirin Mansouri
  Student ID : 301131068
